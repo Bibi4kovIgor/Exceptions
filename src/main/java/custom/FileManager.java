@@ -13,9 +13,8 @@ public class FileManager {
                 throw new IllegalArgumentException("Non readable file");
             }
         } catch (FileNotFoundException err) {
-            if (!isCorrectFileName(fileName)) {
-                throw new IncorrectFileNameException("Incorrect filename : " + fileName, err);
-            }
+            throw new IncorrectFileNameException("Incorrect filename : " + fileName, err);
+//            throw new RuntimeException("Message");
             // Logging etc
         } catch (IllegalArgumentException err) {
             if (!containsExtension(fileName)) {
