@@ -1,7 +1,6 @@
 # Project exclude paths
 /target/
 /.idea/*
-/library/sr
 /library/target/classes/launcher/Application.class
 /library/target/classes/calculator/Calc.class
 /library/target/classes/calculator/Calculator.class
